@@ -14,7 +14,6 @@ export const Form = ({ addTodoToList }) => {
 		})
 			.then((response) => response.json())
 			.then((response) => {
-				console.log('Ответ сервера, дело добавлено', response);
 				addTodoToList(response);
 				setValue('');
 			});
